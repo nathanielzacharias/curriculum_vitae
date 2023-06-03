@@ -1,0 +1,59 @@
+/* 
+Palette hexcodes with # 
+#f4f1de, #e07a5f, #3d405b, #81b29a, #f2cc8f
+
+Object 
+{"Eggshell":"f4f1de","Burnt sienna":"e07a5f","Delft Blue":"3d405b","Cambridge blue":"81b29a","Sunset":"f2cc8f"}
+*/
+:root {    
+    --palette-egg: #f4f1de;
+    --palette-orange: #e07a5f;
+    --palette-midnight: #3d405b;
+    --palette-mint:#81b29a;
+    --palette-sand: #f2cc8f;
+}
+
+body {
+    /* background-color: var(--palette-mint); */
+    background: linear-gradient(75deg, var(--palette-sand) 0%, var(--palette-mint) 105%); 
+    /* background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); */
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    border-left: solid var(--palette-midnight) 0.195rem  ;
+    border-radius: 0.25rem 3rem 3rem 0.25rem;   
+    /* border-top: solid #3d405b  ; */
+    padding: 1rem;
+    margin: 0.75rem;
+
+}
+
+section {
+    /* background-color: var(--palette-orange); */
+    background: linear-gradient(-225deg, var(--palette-orange) 0%, var(--palette-midnight) 195%);
+
+}
+
+h1{
+    /* align-self: center; */
+    /* align-content: center; */
+    /* justify-self: center; */
+    color: var(--palette-midnight);
+    font-size: 1.5em ;
+}
+
+.details {
+    padding: 0.5rem ;
+    /* padding-top: 0; */
+    background: linear-gradient(-225deg, var(--palette-orange) 0%, var(--palette-mint) 105%);
+
+}
+
+
+p, h2, h3 {
+    color: var(--palette-midnight);
+    margin-bottom: 0.75rem;
+}

@@ -15,45 +15,62 @@ Object
 
 body {
     /* background-color: var(--palette-mint); */
-    background: linear-gradient(75deg, var(--palette-sand) 0%, var(--palette-mint) 105%); 
-    /* background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%); */
-    padding: 2.5rem;
+    background: linear-gradient(45deg, var(--palette-sand) -20%, var(--palette-mint) 200%); 
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.top-bar {
+    background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);
+    padding: 0; 
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding:0;
+    margin: 1rem;
+    height: 5rem;
+    width: auto;
+    border: solid var(--palette-midnight);
+}
+h1{
+    font-size: 2em;
+    padding: 0.2em;
+    color: var(--palette-midnight);
+    font-family: 'Geologica', sans-serif;
+    margin: 1rem;
 }
 
 section {
     border-left: solid var(--palette-midnight) 0.195rem  ;
-    border-radius: 0.25rem 3rem 3rem 0.25rem;   
+    border-radius: 0.25rem 2rem 2rem 0.25rem;   
     /* border-top: solid #3d405b  ; */
     padding: 1rem;
     margin: 0.75rem;
-
+    background: linear-gradient(-225deg, var(--palette-orange) -500%, var(--palette-mint) 500%);
+    /* background: linear-gradient(-225deg, var(--palette-orange) 0%, var(--palette-midnight) 165%); */
 }
 
-section {
-    /* background-color: var(--palette-orange); */
-    background: linear-gradient(-225deg, var(--palette-orange) 0%, var(--palette-midnight) 195%);
-
+.title{
+    padding: 0;
+    border: none
 }
 
-h1{
-    /* align-self: center; */
-    /* align-content: center; */
-    /* justify-self: center; */
-    color: var(--palette-midnight);
-    font-size: 1.5em ;
+
+.details > p {
+    padding: 0.75rem ;
 }
 
 .details {
-    padding: 0.5rem ;
-    /* padding-top: 0; */
-    background: linear-gradient(-225deg, var(--palette-orange) 0%, var(--palette-mint) 105%);
-
+    border:none;
+    padding: 0;
 }
-
 
 p, h2, h3 {
     color: var(--palette-midnight);
     margin-bottom: 0.75rem;
+    font-family: 'Geologica', sans-serif;
 }
